@@ -1,0 +1,69 @@
+<!doctype html>
+<head>
+<title>login Page</title>
+<style>table{
+color:solid black;
+margin-top:20px;
+
+}
+</style>
+<script>
+      var username=document.getElementById("d1");
+    var password=document.getElementById("p1");
+    if(username.value.trim()==""||password.value.trim()==""){
+        alert("NO Blank E-Mail ALLOWED");
+        username.style.border=" solid 3px red";
+        return false;
+    }
+    else if(password.value.trim()==""){
+        alert("NO Blank Password ALLOWED");
+        return false;
+    }
+    else if(password.value.trim().length<5){
+        alert("Password too short");
+        password.style.border=" solid 3px red";
+        return false;
+    }
+    else
+    {
+return true;
+    }
+    function callup(){
+        var text=document.getElementById("celll").value;
+        var regx=/[7-9]\d{9}/;
+        if(regx.test(text)){
+            text.style.border="yellow";
+        }
+    }
+</script>
+</head>
+<body bgcolor="POWDERBLACK"><form style="box-sizing: content-box;" onsubmit="return validate()" action="WEBSITEPAGE2.HTML" method="set">
+<fieldset   style="margin-top:10px;width:100%;height: 100%;background-image: url(project-1.JPG);background-repeat:no-repeat;background-size:100%100%;" >
+<legend style="color:ORANGE;"><H4>CONTACTUS</H4></legend>
+<table style="height: 300px;width: 500px;margin-top:50px;" align="center" >
+    <tr>
+
+        <td width="50%" align="right" >NAME:- </td>
+        <td width="50%" align="left" ><input type="TEXT" required placeholder="ENTER YOUR NAME" id="d1"></td>
+        </tr>
+        <tr>
+<td width="50%" align="right" >ADDRESS:- </td>
+<td width="50%" align="left" ><textarea rows="2" cols="20" placeholder="ENTER YOUR ADDRESS" id="p1"></textarea></td>
+</tr>
+<tr>
+<td width="50%" align="right" >EMAIL:- </td>
+<td width="50%" align="left" ><input type="email" placeholder="ENTER YOUR EMAIL"></td>
+</tr>
+<tr>
+<td width="50%" align="right" >PHONE:- </td>
+<td width="50%" align="left"><input type="password" id="cell" onblur="callup()" laceholder="ENTER YOUR PHONE NUMBER"></td></tr>
+
+<tr>
+<td width="50%" align="right" size="2px2px" ><input type="reset" value="Cancel"/>  </td>&nbsp;&nbsp;
+<td width="50%" align="left" >  <input type="submit"  value="Submit"></td>
+</tr>
+</table>
+
+</fieldset></form>
+</body>
+</html> 

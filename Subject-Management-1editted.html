@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<title>Subject management system</title>
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<style>
+.grid-container{
+display:grid;
+ grid-template-areas: 
+            'h1 h1 h1 h1 h1 h1'
+            'h2 h3 h3 h3 h3 h3'
+            'h2 h4 h4 h4 h4 h4'
+            'h2 h4 h4 h4 h4 h4'
+            'h5 h5 h5 h5 h5 h5';
+            grid-gap:1px;
+            background-color:whitesmoke;
+            padding:1px;
+            grid-row: initial;
+            }
+  .grid-container>div{
+                font-size:20px;
+                text-align: left;
+        }
+.d1{grid-area: h1;}
+.d2{grid-area: h2;} 
+.d3{grid-area:h3 ;
+}
+.d4{grid-area:h4 ;
+
+}
+.d5{grid-area:h5 ;}
+.d1{
+        color: white;
+        
+}
+#a1{
+        background-color: black;
+        text-decoration: none;
+        color: blueviolet;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+ <div class="d1" style="background-image: url(project-2.jpg);" ><h1><center style="color: green;background-color: black;stroke-width: 1px;">SUBJECT MANAGEMENT SYSTEM</center ></h1></div>
+ <div class="d2" backgroud="powderblue" style="width: 120px;"><form><table style="height: 400px;width: 600px;" ><tr cellspace="10px"><td><a class="active" href="#"><i class="fa fa-home"></i></a> DASHBOARD</td></tr><br><br><tr><TD><a class="active" href="#"><i class="far fa-address-book"></i></a> SUBJECTS</TD></tr><tr><TD><a class="active" href="#"><i class="far fa-calendar-alt"></i></a>YEAR LEVEL</TD></tr><tr><TD><a class="active" href="#"><i class="	fas fa-anchor"></i></a> ADD SUBJECTS </TD></tr><tr><TD><a class="active" href="#"><i class="fas fa-calculator" ></i></a> EXAM SCHEDULE</TD></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td ><a class="active" href="#"><i class="fa fa-check-square"></i></a><a href="	websitelogin.html" alt="loginpage" id="a1" onmouseover="changecolor()" onmouseout="normal()">  LOGOUT</a><script>
+ function changecolor(){
+         var a=document.getElementById("a1");
+ a.style.backgroundColor="red";
+ a.style.color="white";
+ }
+ function normal(){
+         var b=document.getElementById("a1");
+         b.style.backgroundColor="black";
+         b.style.color="white";
+ }
+</script></td a></tr></table></form></div>
+</script>  <div class="d3" style="background-color:wheat;" ><marquee onmouseover="stop()" style="margin-top: 30px;"onmouseout="start()"><strong> SUBJECT MANAGEMENT PORTAL CONTACT:- 97862435241/9537281547</strong></marquee><a class="active" href="#" ><i class="	fas fa-phone" style="stroke: royalblue;"></i></a></div>
+<div class="d4" style="background-color: limegreen;"><table style="width:100px;height:100px;margin-top: 6px;margin-left: 50px;border-spacing: 15px;" ><tr><td style="background-color:grey;border:solid 1px black;" ><center><b><h2>ECE</h2></b></center></td><td style="background-color:grey;border:solid 1px black;" ><center><b><h2>CSE</h2></b></center></td></tr><tr></tr><td style="background-color:grey;border:solid 1px black;" ><center><b</b><h2>MEC</h2></center></td ><td style="background-color:grey;border:solid 1px black;margin-bottom: 20PX;"><center><BR><B><h2 >MTH</h2></b></center></td></tr><tr><td>UPLOAD MARKS </td></tr><TD> <input type="file" placeholder="upload assingment"></TD></tr>     <tr><td> CREATE EXAM:-<TD><input type="file" placeholder="create exam"></td></tr>        <tr><td>MESSAGE:-<TD><input type="text" placeholder="write message"></td></tr>      <tr><td>EXAM DATE:-<TD> <input type="DATE" placeholder="upload assingment"></TD></tr></table></div>
+ <div class="d5" style="background-color: limegreen;"><a href="CONTACTUS.HTML" style="text-decoration:orange;"  onmouseover="hello()" id="w1" color="white" style="text-align: right;"><h4>CONTACT US</h4></a><INPUT TYPE="BUTTON" onclick="window.location.href('newstudent.html')" value="STUDENT INFORMATION"><script>
+ function hello(){
+         var a=document.getElementById("w1");
+         a.style.backgroundColor="orange";
+         a.style.color="white";
+ }</script></div>
+<div>
+</body>
+</html>

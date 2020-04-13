@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<title>Student management system</title>
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<link href="JASEE.js" rel="script">
+<style>
+.grid-container{
+display:grid;
+ grid-template-areas: 
+            'h1 h1 h1 h1 h1 h1'
+            'h2 h3 h3 h3 h3 h3'
+            'h2 h4 h4 h4 h4 h4'
+            'h2 h4 h4 h4 h4 h4'
+            'h5 h5 h5 h5 h5 h5';
+            grid-gap:2px;
+            background-color:whitesmoke;
+            padding:1px;
+            grid-row: initial;
+            }
+  .grid-container>div{
+                font-size:20px;
+                /*text-align: left;*/
+        }
+.d1{grid-area: h1;}
+.d2{grid-area: h2;} 
+.d3{grid-area:h3 ;
+}
+.d4{grid-area:h4 ;
+
+}
+.d5{grid-area:h5 ;}
+.d1{
+        color: white;
+        
+}
+#a1{
+        background-color: black;
+        text-decoration: none;
+        color: blueviolet;
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+ <div class="d1" style="background-image: url(project-2.jpg);background-color: black;" ><h1><center style="color: orangered;background-color:pink;stroke-width: 1px;">STUDENT MANAGEMENT SYSTEM</center ></h1></div>
+ <div class="d2" backgroud="powderblue" style="width: 120px;"><form><table style="height: 400px;width: 600px;" ><tr cellspace="10px"><td><a class="active" href="#"><i class="fa fa-home"></i></a> DASHBOARD</td></tr><br><br><tr><TD><a class="active" href="#"><i class="far fa-address-book"></i></a> STUDENTS</TD></tr><tr><TD><a class="active" href="#"><i class="far fa-calendar-alt"></i></a> ACADEMIC YEAR</TD></tr><tr><TD><a class="active" href="#"><i class="	fas fa-anchor"></i></a> ATTENDENCE </TD></tr><tr><TD><a class="active" href="#"><i class="fas fa-calculator" ></i></a> MARKS</TD></tr><tr><TD><a class="active" href="#"><i class="	far fa-calendar-alt" ></i></a> TIME-TABLE</TD></tr><tr ><td><a class="active" href="#"><i class="	fas fa-rupee-sign"></i></a> BALANCE</td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr><td ><a class="active" href="#"><i class="fa fa-check-square"></i></a><a href="	websitelogin.html" alt="loginpage" id="a1" onmouseover="changecolor()" onmouseout="normal()" onclick="return confirm('ARE YOU SURE')">  LOGOUT</a><script>
+ function changecolor(){
+         var a=document.getElementById("a1");
+ a.style.backgroundColor="red";
+ a.style.color="white";
+ }
+ function normal(){
+         var b=document.getElementById("a1");
+         b.style.backgroundColor="black";
+         b.style.color="white";
+ 
+ }
+ function change()
+{
+        var it=document.getElementsById("me");
+        it.style.Color="red";
+        
+}
+</script></td></tr></table></form></div> <div class="d3" style="background-color:wheat;"  ><marquee onmouseover="stop()" style="margin-top: 30px;"onmouseout="start()"><strong> STUDENT MANAGEMENT PORTAL CONTACT INFO:-9592252978/9537281547</strong></marquee><a class="active" href="#" ><i class="	fas fa-phone" style="stroke: royalblue;"></i></a></div>
+<div class="d4" id="box" style="background-color:rebeccapurple;"><table class="d1"style="width:100px;height:100px;margin-top: 6px;margin-left: 50px;border-spacing: 15px;color:black;" ><tr><td style="background-color: white;"  ><a href="Student1.html" style="background-color: black;" id="me" onmouseover="change()" > STUDENTS</a><center><b><h2>7</h2></b></center></td><td style="background-color: white;" ><a href="parn.html" style="background-color: cyan;"  >PARENTS</a><center><b><h2>45</h2></b></center></td></tr><tr></tr><td style="background-color: white;" ><a href="BALANCE.HTML" style="background-color: darkgoldenrod;" class="me" onmouseover=" change()">BALANCE</a><center><b</b><h2>45</h2></center></td ><td style="background-color: white;border: dotted black;">ASSIGNMENTS<center><BR><B><h2>4</h2></b></center></td></tr><tr><td >UPLOAD ASSIGNMENT</td></tr><TD> <input type="file" placeholder="upload assingment"></TD></tr><tr><td>EXAM DATE:-<TD> <input type="DATE" placeholder="upload assingment"></TD></tr></table></div>
+ <div class="d5" style="background-color: lightgreen;"><a href="CONTACTUS.HTML" style="text-decoration:orange;"  onmouseover="hello()" id="w1" color="white" ><h4>CONTACT US</h4></a><center><INPUT TYPE="BUTTON" onclick="window.location.href('newstudent.html')" value="NEW STUDENT" align="left"></center><div align="right"><a href="QuestionManagementSystem.html" style="background-color: black;color:white;text-decoration: none;text-align: right;text-align: right;background-size: 8px8px;" onfocus="by()" id="l1" onclick="return confirm('ARE YOU REALLY WANT TO LEAVE THIS PAGE')" align="right" >QuestionManagement</a></div></div>
+        <script>
+             
+                function hello(){
+                        var a=document.getElementById("w1");
+                        a.style.backgroundColor="orange";
+                        a.style.color="blue";
+                        
+                }      
+                        function by(){
+                        var by=document.getElementById("l1");
+                        by.style.backgroundColor=" red";
+                
+                }</script>
+        </div>
+</body>
+</html>
